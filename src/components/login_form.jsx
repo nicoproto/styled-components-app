@@ -3,21 +3,21 @@ import './form.css';
 
 function LoginForm({ handleSubmit }) {
   return (
-    <Form onSubmit={handleSubmit}>
+    <Wrapper onSubmit={handleSubmit}>
       <Label>
         Email:
-        <Input type="email" placeholder="me@you.com" />
+        <TextInput type="email" placeholder="me@you.com" />
       </Label>
       <Label>
         Password:
-        <Input type="password" />
+        <TextInput type="password" />
       </Label>
-      <Submit type="submit">Log In</Submit>
-    </Form>
+      <SubmitButton type="submit">Log In</SubmitButton>
+    </Wrapper>
   );
 }
 
-const Form = styled.form`
+const Wrapper = styled.form`
   width: max-content;
   margin: 16px auto;
   border: 1px dotted silver;
@@ -30,7 +30,7 @@ const Label = styled.label`
   margin-bottom: 16px;
 `;
 
-const Input = styled.input`
+const TextInput = styled.input`
   display: block;
   width: 175px;
   border: 1px solid black;
@@ -46,7 +46,7 @@ const Input = styled.input`
   }
 `;
 
-const Submit = styled.button`
+const SubmitButton = styled.button`
   display: block;
   margin-top: 40px;
   width: 100%;
