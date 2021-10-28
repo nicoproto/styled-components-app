@@ -5,8 +5,8 @@ function ContactCard({ avatarSrc, name, email }) {
   return (
     <Wrapper>
       <Avatar alt="" src={avatarSrc} />
-      <Title>{name}</Title>
-      <Subtitle>{email}</Subtitle>
+      <Name>{name}</Name>
+      <Email>{email}</Email>
     </Wrapper>
   );
 }
@@ -33,13 +33,13 @@ const Avatar = styled.img`
   border: 6px solid white;
 `;
 
-const Title = styled.h2`
+const Name = styled.h2`
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0px;
 `;
 
-const Subtitle = styled.p`
+const Email = styled.p`
   font-size: 1rem;
   font-weight: 300;
   color: hsl(0deg 0% 40%);
