@@ -6,14 +6,14 @@ function FrequentlyAskedQuestion({
   answer,
 }) {
   return (
-    <Faq>
-      <FaqSummary>{question}</FaqSummary>
-      <FaqAnswer>{answer}</FaqAnswer>
-    </Faq>
+    <Wrapper>
+      <Question>{question}</Question>
+      <Answer>{answer}</Answer>
+    </Wrapper>
   );
 }
 
-const Faq = styled.details`
+const Wrapper = styled.details`
   font-size: 1rem;
   color: hsl(0deg 0% 25%);
   margin: 32px;
@@ -21,13 +21,13 @@ const Faq = styled.details`
   border-radius: 4px;
 `;
 
-const FaqSummary = styled.summary`
+const Question = styled.summary`
   cursor: pointer;
   padding: 12px 16px;
   outline-offset: 5px;
 `;
 
-const FaqAnswer = styled.div`
+const Answer = styled.div`
   background: hsl(0deg 0% 92.5%);
   border-radius: 0 0 4px 4px;
   padding: 12px 17px;
