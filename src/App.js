@@ -34,7 +34,7 @@ function App() {
         <Crumb href="/">Home</Crumb>
         <Crumb href="/living">Living Room</Crumb>
         <Crumb href="/living/couch">Couches</Crumb>
-        <Crumb href="/living/couch/sectional">Sectionals</Crumb>
+        <Crumb href="/living/couch/sectional" isCurrentPage={true}>Sectionals</Crumb>
       </Breadcrumbs>
 
       < GlobalStyles / >

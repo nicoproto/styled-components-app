@@ -11,10 +11,15 @@ function Breadcrumbs({ children }) {
   );
 };
 
-function Crumb({ href, children }) {
+function Crumb({ href, isCurrentPage,children }) {
   return (
     <CrumbWrapper>
-      <CrumbLink href={href}>{children}</CrumbLink>
+      <CrumbLink
+        href={href}
+        aria-current={isCurrentPage ? 'page' : undefined}
+      >
+        {children}
+      </CrumbLink>
     </CrumbWrapper>
   );
 };
